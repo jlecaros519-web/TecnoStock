@@ -1,0 +1,426 @@
+:root {
+    --tinta: #192640;
+    --suave: #68758b;
+    --azul: #5363db;
+    --azul-oscuro: #414fc0;
+    --verde: #25826a;
+    --linea: #e5e9f3;
+    --fondo: #f2f5fb;
+    --sombra: 0 12px 36px rgba(31, 47, 82, 0.075);
+    --bs-primary: #5363db;
+    --bs-primary-rgb: 83, 99, 219;
+    --bs-body-color: #192640;
+    --bs-body-font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    color: var(--tinta);
+    background-color: var(--fondo);
+    background-image:
+        radial-gradient(ellipse at 5% 4%, rgba(153, 172, 247, 0.24), transparent 38%),
+        radial-gradient(ellipse at 96% 24%, rgba(193, 167, 240, 0.18), transparent 35%),
+        linear-gradient(rgba(94, 113, 153, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(94, 113, 153, 0.04) 1px, transparent 1px);
+    background-size: auto, auto, 36px 36px, 36px 36px;
+    background-attachment: fixed;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    color: var(--azul);
+    text-underline-offset: 3px;
+}
+
+a:hover {
+    color: var(--azul-oscuro);
+}
+
+h1, h2, h3, h4, h5 {
+    color: var(--tinta);
+    letter-spacing: -0.03em;
+}
+
+.container,
+.contenedor-principal {
+    max-width: 1280px;
+}
+
+.barra-principal {
+    min-height: 84px;
+    padding: 0.9rem 0;
+    background: linear-gradient(110deg, #18243f, #202d4d 65%, #2a3357);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 20px rgba(17, 31, 57, 0.12);
+}
+
+.marca {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: white !important;
+    text-decoration: none;
+}
+
+.marca-logo {
+    width: 48px;
+    height: 48px;
+    flex: 0 0 48px;
+}
+
+.marca-texto {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 750;
+    letter-spacing: -0.04em;
+    line-height: 1.05;
+}
+
+.marca-texto small {
+    display: block;
+    margin-top: 5px;
+    color: #aebad3;
+    font-size: 0.66rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.nombre-usuario {
+    color: #e0e6f3;
+    font-size: 0.87rem;
+}
+
+.btn-salir {
+    border: 1px solid #55627f;
+    color: #e0e6f3;
+    background: transparent;
+}
+
+.btn-salir:hover {
+    color: white;
+    background: #344463;
+    border-color: #8090b0;
+}
+
+.contenido-principal {
+    padding-top: 2.2rem;
+    padding-bottom: 1.5rem;
+}
+
+.page-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1.8rem;
+}
+
+.eyebrow {
+    margin-bottom: 0.45rem;
+    color: #6b76a0;
+    font-size: 0.7rem;
+    font-weight: 750;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.subtitulo,
+.ayuda {
+    color: var(--suave);
+}
+
+.card,
+.panel {
+    overflow: hidden;
+    border: 1px solid rgba(213, 221, 237, 0.92);
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.94);
+    box-shadow: var(--sombra);
+}
+
+.card-header {
+    padding: 1.05rem 1.3rem;
+    border-color: var(--linea);
+    background: rgba(250, 251, 254, 0.86);
+}
+
+.card-body {
+    padding: 1.35rem;
+}
+
+.section-title {
+    margin: 0;
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+.stats-card {
+    height: 100%;
+    border-radius: 14px;
+}
+
+.stat-icon {
+    display: inline-grid;
+    place-items: center;
+    width: 46px;
+    height: 46px;
+    border-radius: 13px;
+    background: #edf0ff;
+    color: #5867d6;
+    font-size: 1.35rem;
+}
+
+.stat-icon.rojo {
+    color: #b94a43;
+    background: #fff0ed;
+}
+
+.stat-icon.verde {
+    color: #23745e;
+    background: #e9f7f1;
+}
+
+.stat-icon.violeta {
+    color: #7954aa;
+    background: #f3edfc;
+}
+
+.stat-value {
+    margin: 0;
+    font-size: 1.95rem;
+    font-weight: 750;
+    letter-spacing: -0.05em;
+}
+
+.stat-label {
+    margin-bottom: 0.25rem;
+    color: var(--suave);
+    font-size: 0.82rem;
+}
+
+.btn {
+    border-radius: 9px;
+    padding: 0.62rem 0.95rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.btn-sm {
+    padding: 0.42rem 0.68rem;
+    font-size: 0.78rem;
+    border-radius: 7px;
+}
+
+.btn-primary {
+    --bs-btn-bg: #5363db;
+    --bs-btn-border-color: #5363db;
+    --bs-btn-hover-bg: #414fc0;
+    --bs-btn-hover-border-color: #414fc0;
+}
+
+.btn-secondary {
+    --bs-btn-bg: #7864ad;
+    --bs-btn-border-color: #7864ad;
+    --bs-btn-hover-bg: #675395;
+    --bs-btn-hover-border-color: #675395;
+}
+
+.btn-success {
+    --bs-btn-bg: #25826a;
+    --bs-btn-border-color: #25826a;
+    --bs-btn-hover-bg: #1c6e59;
+    --bs-btn-hover-border-color: #1c6e59;
+}
+
+.btn-warning {
+    --bs-btn-bg: #fff2ce;
+    --bs-btn-border-color: #f2dfab;
+    --bs-btn-color: #7b5b0e;
+    --bs-btn-hover-bg: #ffe8a8;
+    --bs-btn-hover-border-color: #e2c56b;
+    --bs-btn-hover-color: #694a00;
+}
+
+.btn-danger {
+    --bs-btn-bg: #fff0ef;
+    --bs-btn-border-color: #f4d4d0;
+    --bs-btn-color: #b74440;
+    --bs-btn-hover-bg: #f9dfdc;
+    --bs-btn-hover-border-color: #e7b1ac;
+    --bs-btn-hover-color: #9d2f2a;
+}
+
+.form-label {
+    margin-bottom: 0.45rem;
+    color: #35445f;
+    font-size: 0.86rem;
+    font-weight: 600;
+}
+
+.form-control,
+.form-select {
+    min-height: 43px;
+    border-color: #dce3ee;
+    border-radius: 9px;
+    font-size: 0.9rem;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #8d9aeb;
+    box-shadow: 0 0 0 0.2rem rgba(83, 99, 219, 0.12);
+}
+
+.form-control[readonly] {
+    background-color: #f3f5f9;
+    color: #69758b;
+}
+
+.form-panel {
+    max-width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.table {
+    --bs-table-bg: transparent;
+    --bs-table-color: #34435d;
+    --bs-table-border-color: #e9edf5;
+    --bs-table-hover-bg: #f7f9ff;
+    margin-bottom: 0;
+    font-size: 0.875rem;
+}
+
+.table > :not(caption) > * > * {
+    padding: 0.9rem 0.95rem;
+    vertical-align: middle;
+}
+
+.table thead th {
+    color: #718099;
+    background: #f6f8fc;
+    border-bottom: 1px solid var(--linea);
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.055em;
+    white-space: nowrap;
+}
+
+.fila-stock-bajo {
+    --bs-table-bg: #fffaf2;
+    --bs-table-hover-bg: #fff5e3;
+}
+
+.fila-stock-bajo td:first-child {
+    box-shadow: inset 3px 0 #eeb45e;
+}
+
+.badge {
+    border-radius: 6px;
+    padding: 0.45rem 0.6rem;
+    font-size: 0.69rem;
+    font-weight: 600;
+}
+
+.text-bg-success {
+    color: #216c53 !important;
+    background-color: #e8f5ee !important;
+}
+
+.text-bg-danger {
+    color: #a83e36 !important;
+    background-color: #fdebe8 !important;
+}
+
+.text-bg-primary {
+    color: #4856b8 !important;
+    background-color: #edf0ff !important;
+}
+
+.text-bg-secondary {
+    color: #67758c !important;
+    background-color: #eef1f6 !important;
+}
+
+.alert {
+    border-radius: 11px;
+    padding: 0.95rem 1.1rem;
+    font-size: 0.88rem;
+}
+
+.auth-shell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2.5rem 1rem;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 470px;
+    border-radius: 22px;
+    box-shadow: 0 20px 65px rgba(46, 63, 112, 0.12);
+}
+
+.auth-top {
+    padding: 1.7rem 1.5rem 1.45rem;
+    text-align: center;
+    background: linear-gradient(120deg, #1b2949, #303b65);
+}
+
+.auth-logo {
+    width: 72px;
+    height: 72px;
+    margin-bottom: 0.75rem;
+}
+
+.auth-top h1 {
+    margin-bottom: 0.2rem;
+    color: #fff;
+    font-size: 1.65rem;
+}
+
+.auth-top p {
+    margin: 0;
+    color: #c0cbe1;
+    font-size: 0.85rem;
+}
+
+.auth-card .card-body {
+    padding: 2rem;
+}
+
+.pie-pagina {
+    padding: 1.4rem 0;
+    color: #7a869c;
+    font-size: 0.74rem;
+    text-align: center;
+}
+
+@media (max-width: 767.98px) {
+    .barra-principal {
+        min-height: 74px;
+    }
+
+    .marca-logo {
+        width: 42px;
+        height: 42px;
+        flex-basis: 42px;
+    }
+
+    .marca-texto {
+        font-size: 1.1rem;
+    }
+
+    .contenido-principal {
+        padding-top: 1.5rem;
+    }
+
+    .card-body {
+        padding: 1.1rem;
+    }
+}
